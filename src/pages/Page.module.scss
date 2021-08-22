@@ -171,6 +171,32 @@
         margin-bottom: 0px;
         margin-left: auto;
         text-align: left;
+        .workBlock {
+          margin-top: 7.5%;
+          margin-bottom: 7.5%;
+          a {
+            text-decoration: none;
+          }
+          .projName {
+            font-family: "JetBrains Mono", monospace;
+            line-height: 160%;
+            font-size: 30px;
+            color: #000;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+            transition-delay: 0s;
+          }
+          .projName:hover {
+            font-size: 40px;
+          }
+          .projDesc {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 200;
+            font-size: large;
+            color: red;
+          }
+        }
         .fontLarge {
           font-family: "JetBrains Mono", monospace;
           line-height: 160%;
