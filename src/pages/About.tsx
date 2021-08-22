@@ -2,12 +2,15 @@ import React from "react";
 import style from './Page.module.scss'
 import img from '../files/3x4.jpg'
 import pdf from '../files/Resume.pdf'
+import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTop'
+import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const About = () => {
 
   return (
     <div className={style.about}>
       <div className={style.maxWidth}>
+        <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
@@ -42,6 +45,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <ScrollTopBtn />
     </div>
   )
 }

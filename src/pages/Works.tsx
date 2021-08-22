@@ -1,11 +1,14 @@
 import React from "react";
 import style from './Page.module.scss'
+import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTop'
+import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const Works = () => {
 
   return (
     <div className={style.contact}>
       <div className={style.maxWidth}>
+        <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
@@ -15,7 +18,7 @@ const Works = () => {
           <div className={style.maxWidth70}>
 
             <div className={style.workBlock}>
-              <a className={style.proj} href='/' target='_blank'>
+              <a className={style.proj} href='https://github.com/thienhieu215/portfolio' target='_blank'>
                 <h2 className={style.projName}>
                   Portfolio
                 </h2>
@@ -24,7 +27,7 @@ const Works = () => {
             </div>
 
             <div className={style.workBlock}>
-              <a className={style.proj} href='/' target='_blank'>
+              <a className={style.proj} href='https://github.com/thienhieu215/bookstore-react-typescript' target='_blank'>
                 <h2 className={style.projName}>
                   Bookstore
                 </h2>
@@ -35,6 +38,7 @@ const Works = () => {
           </div>
         </div>
       </div>
+      <ScrollTopBtn />
     </div>
   )
 }

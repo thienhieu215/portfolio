@@ -4,12 +4,15 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTop'
+import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const Contact = () => {
 
   return (
     <div className={style.contact}>
       <div className={style.maxWidth}>
+        <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>Let's get connected .</h2>
@@ -39,7 +42,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+      <ScrollTopBtn />
     </div>
   )
 }
