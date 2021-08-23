@@ -12,7 +12,7 @@ const Works = () => {
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
-              What I have done :
+              What I have done<span style={{color: '#ff4500'}}>:</span>
             </h2>
           </div>
           <div className={style.maxWidth70}>
@@ -37,6 +37,8 @@ const Works = () => {
 
           </div>
         </div>
+      </div>
+      <div className={style.bgphoto}>
       </div>
       <ScrollTopBtn />
     </div>

@@ -15,10 +15,9 @@ const Contact = () => {
         <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
-            <h2 className={style.h2}>Let's get connected .</h2>
+            <h2 className={style.h2}>Let's get connected<span style={{color: '#ff4500'}}>.</span></h2>
           </div>
           <div className={style.maxWidth70}>
-            <h4>Contact</h4>
             <div className={style.text}>
               <p>
                 Below are the links to my social media accounts.
@@ -41,6 +40,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={style.bgphoto}>
       </div>
       <ScrollTopBtn />
     </div>

@@ -25,7 +25,6 @@ const Homepage = () => {
         </h1>
       </div>
       <div className={style.bgphoto}>
-
       </div>
     </div>
   )
