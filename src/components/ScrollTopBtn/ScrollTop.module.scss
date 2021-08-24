@@ -1,10 +1,19 @@
 .btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 50px;
+  bottom: 30px;
+  right: 60px;
   background: black;
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
+  .arrow {
+    font-size: 3em;
+  }
+}
+.btn:hover {
+  color: #006400;
+}
+.btn:focus {
+  outline: none;
 }

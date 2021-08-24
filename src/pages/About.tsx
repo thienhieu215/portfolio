@@ -14,7 +14,7 @@ const About = () => {
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
-              A junior front-end developer<span style={{color: '#ff4500'}}>.</span>
+              A junior front-end developer<span style={{color: '#006400'}}>.</span>
             </h2>
           </div>
           <div className={style.img}>

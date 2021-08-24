@@ -4,14 +4,19 @@
     position: fixed;
     top: 10%;
     z-index: 999;
+    font-size: 1.5em;
     a {
       text-decoration: none;
+      // font-size: 1.5em;
+      font-family: "JetBrains Mono", monospace;
+      color: #353535;
     }
     .labelHomepage::before {
       content: "";
     }
     .labelHomepage:hover::before {
       content: "back to ";
+      font-size: 0.75em;
     }
     .labelHomepage::after {
       content: "Homepage.";
@@ -33,7 +38,7 @@
       transition-delay: 0s;
     }
     .hover:hover {
-      color: red;
+      color: #006400;
     }
   }
 }

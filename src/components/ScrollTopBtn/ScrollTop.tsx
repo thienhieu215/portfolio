@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import style from './ScrollTop.module.scss'
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 const ScrollButton = () => {
 
@@ -26,7 +27,7 @@ const ScrollButton = () => {
     <>
       {visible &&
         <button onClick={scrollToTop} className={style.btn} >
-          Top
+          <ExpandLessIcon className={style.arrow}/>
         </button>
       }
     </>

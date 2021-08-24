@@ -24,7 +24,7 @@
     .labelHello:hover::after {
       visibility: visible;
       content: "About";
-      color: #ff4500;
+      color: #006400;
     }
     .labelHello::after {
       visibility: visible;
@@ -36,7 +36,7 @@
     .labeliam:hover::after {
       visibility: visible;
       content: "Work";
-      color: #ff4500;
+      color: #006400;
     }
     .labeliam::after {
       visibility: visible;
@@ -48,7 +48,7 @@
     .labelName:hover::after {
       visibility: visible;
       content: "Contact";
-      color: #ff4500;
+      color: #006400;
     }
     .labelName::after {
       visibility: visible;
@@ -134,7 +134,7 @@
           line-height: 200%;
           font-size: 22px;
           margin-bottom: 4vh;
-          color: #ff4500;
+          color: #006400;
         }
         .text {
           font-family: "JetBrains Mono", monospace;
@@ -143,10 +143,10 @@
           line-height: 200%;
         }
         .fontLarge a {
-          color: #ff4500;
+          color: #006400;
         }
         .text a {
-          color: #ff4500;
+          color: #006400;
         }
       }
     }
@@ -214,8 +214,9 @@
           }
           .projName {
             font-family: "JetBrains Mono", monospace;
+            font-weight: 500;
             line-height: 160%;
-            font-size: 30px;
+            font-size: 35px;
             color: #000;
             transition-property: all;
             transition-duration: 0.4s;
@@ -223,13 +224,13 @@
             transition-delay: 0s;
           }
           .projName:hover {
-            font-size: 40px;
+            font-size: 45px;
           }
           .projDesc {
             font-family: "JetBrains Mono", monospace;
-            font-weight: 200;
+            font-weight: 300;
             font-size: large;
-            color: #ff4500;
+            color: #006400;
           }
         }
         .fontLarge {
@@ -238,7 +239,7 @@
           line-height: 200%;
           font-size: 22px;
           margin-bottom: 4vh;
-          color: #ff4500;
+          color: #006400;
         }
         .text {
           font-family: "JetBrains Mono", monospace;
@@ -261,7 +262,7 @@
           }
           .icon:hover {
             font-size: 5em;
-            color: #ff4500;
+            color: #006400;
           }
         }
       }

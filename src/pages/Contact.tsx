@@ -15,7 +15,7 @@ const Contact = () => {
         <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
-            <h2 className={style.h2}>Let's get connected<span style={{color: '#ff4500'}}>.</span></h2>
+            <h2 className={style.h2}>Let's get connected<span style={{color: '#006400'}}>.</span></h2>
           </div>
           <div className={style.maxWidth70}>
             <div className={style.text}>
