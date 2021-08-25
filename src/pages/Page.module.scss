@@ -11,58 +11,43 @@
     .link:visited {
       text-decoration: none;
       cursor: pointer;
-      padding-bottom: 10%;
+      margin-bottom: 5%;
       font-family: "JetBrains Mono", monospace;
       font-weight: 800;
     }
-    .color {
-      color: #000;
-    }
-    .labelHello:hover {
-      visibility: hidden;
-    }
     .labelHello:hover::after {
-      visibility: visible;
       content: "About";
-      color: #006400;
+      color: #E55B13;
     }
     .labelHello::after {
-      visibility: visible;
       content: "Hello.";
-    }
-    .labeliam:hover {
-      visibility: hidden;
+      color: #1d1d1d;
     }
     .labeliam:hover::after {
-      visibility: visible;
       content: "Work";
-      color: #006400;
+      color: #E55B13;
     }
     .labeliam::after {
-      visibility: visible;
       content: "I am";
-    }
-    .labelName:hover {
-      visibility: hidden;
+      color: #1d1d1d;
     }
     .labelName:hover::after {
-      visibility: visible;
       content: "Contact";
-      color: #006400;
+      color: #E55B13;
     }
     .labelName::after {
-      visibility: visible;
-      content: "Hieu Nguyen";
+      content: "Hieu Ng";
+      color: #1d1d1d;
     }
     .hover {
-      font-size: 50px;
+      font-size: 2em;
       transition-property: all;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
       transition-delay: 0s;
     }
     .hover:hover {
-      font-size: 100px;
+      font-size: 3em;
     }
   }
   .bgphoto {
@@ -123,30 +108,29 @@
       }
       .maxWidth70 {
         max-width: 70%;
-        margin-top: 0px;
         margin-right: auto;
-        margin-bottom: 0px;
         margin-left: auto;
         text-align: left;
         .fontLarge {
           font-family: "JetBrains Mono", monospace;
           font-weight: 500;
           line-height: 200%;
-          font-size: 22px;
+          font-size: 25px;
           margin-bottom: 4vh;
-          color: #006400;
+          color: #E55B13;
         }
         .text {
           font-family: "JetBrains Mono", monospace;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 20px;
           line-height: 200%;
+          color: #1d1d1d;
         }
         .fontLarge a {
-          color: #006400;
+          color: #E55B13;
         }
         .text a {
-          color: #006400;
+          color: #E55B13;
         }
       }
     }
@@ -168,16 +152,12 @@
     opacity: 0.4;
   }
   .maxWidth {
-    margin-top: 0px;
     margin-right: auto;
-    margin-bottom: 0px;
     margin-left: auto;
     max-width: 60%;
     .topBottomMargin {
       margin-top: 35vh;
-      margin-right: 0px;
-      margin-bottom: 30vh;
-      margin-left: 0px;
+      margin-bottom: 20vh;
       .hideTextBlock {
         position: relative;
         display: block;
@@ -185,7 +165,7 @@
         .h2 {
           font-family: "JetBrains Mono", monospace;
           line-height: 140%;
-          font-size: 4em;
+          font-size: 5em;
         }
       }
       .img {
@@ -200,10 +180,9 @@
         object-fit: cover;
       }
       .maxWidth70 {
-        max-width: 80%;
-        margin-top: 10%;
+        max-width: 70%;
+        margin-top: 35vh;    
         margin-right: auto;
-        margin-bottom: 0px;
         margin-left: auto;
         text-align: left;
         .workBlock {
@@ -216,21 +195,22 @@
             font-family: "JetBrains Mono", monospace;
             font-weight: 500;
             line-height: 160%;
-            font-size: 35px;
-            color: #000;
+            font-size: 2.5em;
+            color: #1d1d1d;
             transition-property: all;
             transition-duration: 0.4s;
             transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
             transition-delay: 0s;
           }
           .projName:hover {
-            font-size: 45px;
+            font-size: 3.5em;
+            color: #E55B13;
           }
           .projDesc {
             font-family: "JetBrains Mono", monospace;
-            font-weight: 300;
-            font-size: large;
-            color: #006400;
+            font-size: 20px;
+            color: #1d1d1d;
+            font-weight: 500;
           }
         }
         .fontLarge {
@@ -239,21 +219,23 @@
           line-height: 200%;
           font-size: 22px;
           margin-bottom: 4vh;
-          color: #006400;
+          color: #E55B13;
         }
         .text {
+          text-align: center;
           font-family: "JetBrains Mono", monospace;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 20px;
           line-height: 200%;
+          color: #1d1d1d;
         }
         .icons {
           margin-top: 10%;
           display: flex;
           justify-content: space-around;
           .icon {
-            color: #353535;
-            font-size: 3em;
+            color: #1d1d1d;
+            font-size: 3.5em;
             cursor: pointer;
             transition-property: all;
             transition-duration: 0.4s;
@@ -262,7 +244,7 @@
           }
           .icon:hover {
             font-size: 5em;
-            color: #006400;
+            color: #E55B13;
           }
         }
       }

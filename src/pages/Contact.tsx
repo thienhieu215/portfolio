@@ -15,12 +15,14 @@ const Contact = () => {
         <HomeBtn />
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
-            <h2 className={style.h2}>Let's get connected<span style={{color: '#006400'}}>.</span></h2>
+            <h2 className={style.h2}>Let's get connected<span style={{ color: '#E55B13' }}>.</span></h2>
           </div>
           <div className={style.maxWidth70}>
             <div className={style.text}>
               <p>
                 Below are the links to my social media accounts.
+              </p>
+              <p>
                 Feel free to reach me out through any platforms below:
               </p>
             </div>
