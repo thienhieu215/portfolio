@@ -17,7 +17,7 @@
     }
     .labelHello:hover::after {
       content: "About";
-      color: #E55B13;
+      color: #e55b13;
     }
     .labelHello::after {
       content: "Hello.";
@@ -25,7 +25,7 @@
     }
     .labeliam:hover::after {
       content: "Work";
-      color: #E55B13;
+      color: #e55b13;
     }
     .labeliam::after {
       content: "I am";
@@ -33,7 +33,7 @@
     }
     .labelName:hover::after {
       content: "Contact";
-      color: #E55B13;
+      color: #e55b13;
     }
     .labelName::after {
       content: "Hieu Ng";
@@ -63,188 +63,237 @@
   }
 }
 
-.about {
-  width: 100%;
-  overflow: hidden;
-  .bgphoto {
-    background-image: url(../files/dalat.jpg);
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0%;
-    z-index: -9;
-    opacity: 0.4;
-  }
-  .maxWidth {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 60%;
-    .topBottomMargin {
-      margin-top: 35vh;
-      margin-bottom: 20vh;
-      .hideTextBlock {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        .h2 {
-          font-family: "JetBrains Mono", monospace;
-          line-height: 140%;
-          font-size: 5em;
-        }
-      }
-      .img {
-        width: 80vw;
-        height: 90vh;
-        overflow: hidden;
+@media only screen and (min-width: 425px) {
+  .page {
+    width: 100%;
+    overflow: hidden;
+    .bgphoto {
+      background-image: url(../files/dalat.jpg);
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0%;
+      z-index: -9;
+      opacity: 0.4;
+    }
+    .maxWidth {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 60%;
+      .topBottomMargin {
         margin-top: 35vh;
-        margin-bottom: 15vh;
-      }
-      .img img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-      }
-      .maxWidth70 {
-        max-width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: left;
-        .fontLarge {
-          font-family: "JetBrains Mono", monospace;
-          font-weight: 500;
-          line-height: 200%;
-          font-size: 25px;
-          margin-bottom: 4vh;
-          color: #E55B13;
+        margin-bottom: 20vh;
+        .hideTextBlock {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          .h2 {
+            font-family: "JetBrains Mono", monospace;
+            line-height: 140%;
+            font-size: 5em;
+          }
         }
-        .text {
-          font-family: "JetBrains Mono", monospace;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 200%;
-          color: #1d1d1d;
+        .img {
+          width: 80vw;
+          height: 90vh;
+          overflow: hidden;
+          margin-top: 35vh;
+          margin-bottom: 15vh;
         }
-        .fontLarge a {
-          color: #E55B13;
+        .img img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
         }
-        .text a {
-          color: #E55B13;
+        .maxWidth70 {
+          margin-top: 35vh;
+          max-width: 70%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: left;
+          .workBlock {
+            // margin-top: 7.5%;
+            margin-bottom: 7.5%;
+            a {
+              text-decoration: none;
+            }
+            .projName {
+              font-family: "JetBrains Mono", monospace;
+              font-weight: 500;
+              line-height: 160%;
+              font-size: 2.5em;
+              color: #1d1d1d;
+              transition-property: all;
+              transition-duration: 0.4s;
+              transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+              transition-delay: 0s;
+            }
+            .projName:hover {
+              font-size: 3.5em;
+              color: #e55b13;
+            }
+            .projDesc {
+              font-family: "JetBrains Mono", monospace;
+              font-size: 20px;
+              color: #1d1d1d;
+              font-weight: 500;
+            }
+          }
+          .fontLarge {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 500;
+            line-height: 200%;
+            font-size: 25px;
+            margin-bottom: 4vh;
+            color: #e55b13;
+          }
+          .text {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 200%;
+            color: #1d1d1d;
+          }
+          .fontLarge a {
+            color: #e55b13;
+          }
+          .text a {
+            color: #e55b13;
+          }
+          .icons {
+            margin-top: 10%;
+            display: flex;
+            justify-content: space-around;
+            .icon {
+              color: #1d1d1d;
+              font-size: 3.5em;
+              cursor: pointer;
+              transition-property: all;
+              transition-duration: 0.4s;
+              transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+              transition-delay: 0s;
+            }
+            .icon:hover {
+              font-size: 5em;
+              color: #e55b13;
+            }
+          }
         }
       }
     }
   }
 }
 
-.contact {
-  width: 100%;
-  overflow: hidden;
-  .bgphoto {
-    background-image: url(../files/dalat.jpg);
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0%;
-    z-index: -9;
-    opacity: 0.4;
-  }
-  .maxWidth {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 60%;
-    .topBottomMargin {
-      margin-top: 35vh;
-      margin-bottom: 20vh;
-      .hideTextBlock {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        .h2 {
-          font-family: "JetBrains Mono", monospace;
-          line-height: 140%;
-          font-size: 5em;
-        }
-      }
-      .img {
-        width: 100vw;
-        height: 90vh;
-        overflow: hidden;
-        margin: 30vh 0;
-      }
-      .img img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-      }
-      .maxWidth70 {
-        max-width: 70%;
-        margin-top: 35vh;    
-        margin-right: auto;
-        margin-left: auto;
-        text-align: left;
-        .workBlock {
-          margin-top: 7.5%;
-          margin-bottom: 7.5%;
-          a {
-            text-decoration: none;
+@media only screen and (max-width: 426px) {
+  .page {
+    width: 100%;
+    overflow: hidden;
+    .bgphoto {
+      background-image: url(../files/dalat.jpg);
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0%;
+      z-index: -9;
+      opacity: 0.4;
+    }
+    .maxWidth {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 85%;
+      .topBottomMargin {
+        margin-top: 35vh;
+        margin-bottom: 20vh;
+        .hideTextBlock {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          .h2 {
+            font-family: "JetBrains Mono", monospace;
+            line-height: 140%;
+            font-size: 3em;
           }
-          .projName {
+        }
+        .img {
+          width: 100vw;
+          height: 90vh;
+          overflow: hidden;
+          margin-top: 35vh;
+          margin-bottom: 15vh;
+        }
+        .img img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+        .maxWidth70 {
+          margin-top: 10vh;
+          max-width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: left;
+          .workBlock {
+            margin-top: 7.5%;
+            margin-bottom: 7.5%;
+            a {
+              text-decoration: none;
+            }
+            .projName {
+              font-family: "JetBrains Mono", monospace;
+              font-weight: 500;
+              line-height: 160%;
+              font-size: 2.5em;
+              color: #e55b13;
+              transition-property: all;
+              transition-duration: 0.4s;
+              transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+              transition-delay: 0s;
+            }
+            .projDesc {
+              font-family: "JetBrains Mono", monospace;
+              font-size: 20px;
+              color: #1d1d1d;
+              font-weight: 500;
+            }
+          }
+          .fontLarge {
             font-family: "JetBrains Mono", monospace;
             font-weight: 500;
-            line-height: 160%;
-            font-size: 2.5em;
-            color: #1d1d1d;
-            transition-property: all;
-            transition-duration: 0.4s;
-            transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
-            transition-delay: 0s;
+            line-height: 200%;
+            font-size: 25px;
+            margin-bottom: 4vh;
+            color: #e55b13;
           }
-          .projName:hover {
-            font-size: 3.5em;
-            color: #E55B13;
-          }
-          .projDesc {
+          .text {
             font-family: "JetBrains Mono", monospace;
+            font-weight: 500;
             font-size: 20px;
+            line-height: 200%;
             color: #1d1d1d;
-            font-weight: 500;
           }
-        }
-        .fontLarge {
-          font-family: "JetBrains Mono", monospace;
-          font-weight: 500;
-          line-height: 200%;
-          font-size: 22px;
-          margin-bottom: 4vh;
-          color: #E55B13;
-        }
-        .text {
-          text-align: center;
-          font-family: "JetBrains Mono", monospace;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 200%;
-          color: #1d1d1d;
-        }
-        .icons {
-          margin-top: 10%;
-          display: flex;
-          justify-content: space-around;
-          .icon {
-            color: #1d1d1d;
-            font-size: 3.5em;
-            cursor: pointer;
-            transition-property: all;
-            transition-duration: 0.4s;
-            transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
-            transition-delay: 0s;
+          .fontLarge a {
+            color: #e55b13;
           }
-          .icon:hover {
-            font-size: 5em;
-            color: #E55B13;
+          .text a {
+            color: #e55b13;
+          }
+          .icons {
+            margin-top: 10%;
+            display: flex;
+            justify-content: space-around;
+            .icon {
+              color: #e55b13;
+              font-size: 2.5em;
+              cursor: pointer;
+              transition-property: all;
+              transition-duration: 0.4s;
+              transition-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+              transition-delay: 0s;
+            }
           }
         }
       }

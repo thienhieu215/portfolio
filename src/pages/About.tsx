@@ -8,7 +8,7 @@ import HomeBtn from '../components/BackHomeBtn/BackHome'
 const About = () => {
 
   return (
-    <div className={style.about}>
+    <div className={style.page}>
       <div className={style.maxWidth}>
         <HomeBtn />
         <div className={style.topBottomMargin}>

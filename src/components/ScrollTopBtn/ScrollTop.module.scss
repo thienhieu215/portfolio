@@ -1,6 +1,9 @@
 .btn {
   position: fixed;
   bottom: 30px;
+  @media only screen and (max-width: 426px) {
+    right: 30px;
+  }
   right: 60px;
   background: black;
   color: whitesmoke;

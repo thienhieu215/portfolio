@@ -10,7 +10,7 @@ import HomeBtn from '../components/BackHomeBtn/BackHome'
 const Contact = () => {
 
   return (
-    <div className={style.contact}>
+    <div className={style.page}>
       <div className={style.maxWidth}>
         <HomeBtn />
         <div className={style.topBottomMargin}>

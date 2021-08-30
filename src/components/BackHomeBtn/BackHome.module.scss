@@ -3,23 +3,33 @@
   .logoInner {
     position: fixed;
     top: 10%;
+    @media only screen and (max-width: 426px) {
+      left: 70%;
+    }
     z-index: 999;
-    font-size: 1.5em;
+    font-size: 2em;
     a {
-      text-decoration: none;
-      // font-size: 1.5em;
+      text-decoration: underline;
       font-family: "JetBrains Mono", monospace;
-      color: #353535;
+      font-weight: 800;
+      color: #e55b13;
     }
     .labelHomepage::before {
       content: "";
     }
-    .labelHomepage:hover::before {
-      content: "back to ";
-      font-size: 0.75em;
+    @media only screen and (min-width: 425px) {
+      .labelHomepage:hover::before {
+        content: "back to ";
+        font-size: 0.75em;
+      }
+      .labelHomepage::after {
+        content: "Homepage.";
+      }
     }
-    .labelHomepage::after {
-      content: "Homepage.";
+    @media only screen and (max-width: 426px) {
+      .labelHomepage::after {
+        content: ".home";
+      }
     }
     .animation {
       animation-duration: 0.6s;
@@ -38,7 +48,7 @@
       transition-delay: 0s;
     }
     .hover:hover {
-      color: #E55B13;
+      color: #e55b13;
     }
   }
 }
