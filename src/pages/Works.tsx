@@ -1,9 +1,13 @@
-import React from "react";
+import { useEffect } from "react";
 import style from './Page.module.scss'
 import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTop'
 import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const Works = () => {
+
+  useEffect(() => {
+    document.title = "My Projects."
+  }, [])
 
   return (
     <div className={style.page}>
@@ -12,13 +16,13 @@ const Works = () => {
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
-              What I have done<span style={{color: '#E55B13'}}>:</span>
+              What I have done<span style={{ color: '#E55B13' }}>:</span>
             </h2>
           </div>
           <div className={style.maxWidth70}>
 
             <div className={style.workBlock}>
-              <a className={style.proj} href='https://github.com/thienhieu215/portfolio' target='_blank'>
+              <a className={style.proj} href='https://github.com/thienhieu215/portfolio' target='_blank' rel="noreferrer">
                 <h2 className={style.projName}>
                   Portfolio
                 </h2>
@@ -27,7 +31,7 @@ const Works = () => {
             </div>
 
             <div className={style.workBlock}>
-              <a className={style.proj} href='https://github.com/thienhieu215/bookstore-react-typescript' target='_blank'>
+              <a className={style.proj} href='https://github.com/thienhieu215/bookstore-react-typescript' target='_blank' rel="noreferrer">
                 <h2 className={style.projName}>
                   Bookstore
                 </h2>

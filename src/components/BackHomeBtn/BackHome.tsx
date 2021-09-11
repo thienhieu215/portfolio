@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import style from './BackHome.module.scss'
 
 const ScrollButton = () => {

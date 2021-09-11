@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import style from './Page.module.scss'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -8,6 +8,10 @@ import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTop'
 import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const Contact = () => {
+
+  useEffect(() => {
+    document.title = "Let's get connected!"
+  }, [])
 
   return (
     <div className={style.page}>

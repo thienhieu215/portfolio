@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import style from './Page.module.scss'
 import { useMediaQuery } from 'react-responsive'
 

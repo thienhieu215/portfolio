@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import style from './Page.module.scss'
 import img from '../files/unnamed.jpg'
 import pdf from '../files/Resume.pdf'
@@ -7,6 +7,10 @@ import HomeBtn from '../components/BackHomeBtn/BackHome'
 
 const About = () => {
 
+  useEffect(() => {
+    document.title = "About Me"
+  }, [])
+
   return (
     <div className={style.page}>
       <div className={style.maxWidth}>
@@ -14,11 +18,11 @@ const About = () => {
         <div className={style.topBottomMargin}>
           <div className={style.hideTextBlock}>
             <h2 className={style.h2}>
-              A junior front-end developer<span style={{color: '#E55B13'}}>.</span>
+              A junior front-end developer<span style={{ color: '#E55B13' }}>.</span>
             </h2>
           </div>
           <div className={style.img}>
-            <img draggable='false' src={img} alt="No Photo" />
+            <img draggable='false' src={img} alt="potrait" />
           </div>
           <div className={style.maxWidth70}>
             <p className={style.fontLarge}>Hello, my name is Nguyen Duc Thien Hieu and I am a developer with experience in Front-End development.</p>
@@ -44,7 +48,7 @@ const About = () => {
               <p>You can read more about my skills, experience, education and much more in the PDF attached below:</p>
             </div>
             <div className={style.fontLarge}>
-              <a href={pdf} target='_blank'>My resume (pdf 119KB)</a>
+              <a href={pdf} target='_blank' rel="noreferrer">My resume (pdf 119KB)</a>
             </div>
           </div>
         </div>
